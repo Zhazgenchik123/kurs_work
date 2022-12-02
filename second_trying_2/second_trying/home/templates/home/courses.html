@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>курсы</title>
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="top">
+        <div class="navbar">
+
+            <div class="container">
+                <ul class="menu_left">
+                    <li><a href="{% url 'home' %}">главная</a></li>
+                    <li><a href="#">курсы</a></li>
+                    <li><a href="#">ресурсы</a></li>
+                    <li><a href="#">рейтинг/архив</a></li>
+            </ul>
+            <img src="{% static 'home/img/logo.png' %}" alt="LOGO" class="logo">
+            <ul class="menu_right">
+                <li><a href="#">о нас</a></li>
+                <li><a href="#">Тестирование</a></li>
+                <li><a href="{% url 'voc' %}">Вокансии</a></li>
+            </ul>
+            </div>
+        </div>
+        
+       
+        
+    </div>
+    <div class="general">
+        <div  class="titlle">
+            <h2>Наша команда</h2>
+            <div class="line-box">
+                <div class="line"></div>
+            </div>
+            <p>Вы получаете сервис высочайшего класса от первоклассных         
+            экспертов своего направления</p>
+        </div>
+        <div class="butn">
+            <img class="slider-prev" src="{% static 'home/img/left.svg' %}" alt="">
+        
+        
+            <img class="slider-next" src="{% static 'home/img/right.svg' %}" alt="">
+        </div>
+            
+        
+        <div class="conta">
+            <div class="slider">
+                <ul class="bl slider-line">
+                    <li class="sl">
+                        <img src="{% static 'home/img/ayana.jpg' %}" alt="">
+                        <div class="in">
+                            <p class="name">Байзакова Аяна</p>
+                            <p class="work">CEO</p>
+                            <div class="mini_line-box">
+                                <div class="mini_line"></div>
+                            </div>
+                            
+                            <p class="about">Работает в компании с момента основания и участвует в развитии нескольких проектов. Эксперт ​в своей области. Ежегодно посещает международные конференции. </p>
+                        </div>
+                        
+                    </li>
+                    <li class="sl">
+                        <img src="./img/person1.jpg" alt="">
+                        <div class="in">
+                            <p class="name">Урматов Жамин</p>
+                            <p class="work">CEO</p>
+                            <div class="mini_line-box">
+                                <div class="mini_line"></div>
+                            </div>
+                            
+                            <p class="about">Работает в компании с момента основания и участвует в развитии нескольких проектов. Эксперт ​в своей области. Ежегодно посещает международные конференции. </p>
+                        </div>
+                    </li>
+                    <li class="sl">
+                        <img src="{% static 'home/img/argen.jpg' %}" alt="">
+                        <div class="in">
+                            <p class="name">Шадыбеков Арген</p>
+                            <p class="work">CEO</p>
+                            <div class="mini_line-box">
+                                <div class="mini_line"></div>
+                            </div>
+                            
+                            <p class="about">Работает в компании с момента основания и участвует в развитии нескольких проектов. Эксперт ​в своей области. Ежегодно посещает международные конференции. </p>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+           
+           
+            
+        
+        </div>
+    </div>
+    <footer></footer>
+    <script src="{% static 'home/js/script.js' %}"></script>
+</body>
+</html>
